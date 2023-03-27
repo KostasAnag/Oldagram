@@ -38,10 +38,13 @@ btn.addEventListener("click", function () {
     likes.textContent = likesNum;
   });*/
 
-const contentEl = document.getElementById("wrapper")
- let html = ""
- for (let i = 0; i < posts.length; i++) {
-    html += `
+const contentEl = document.getElementById("wrapper");
+let html = "";
+for (let i = 0; i < posts.length; i++) {
+ 
+  
+  
+  html += `
     <main>
     <section class="user-post-profile">
       <div class="container">
@@ -72,10 +75,7 @@ const contentEl = document.getElementById("wrapper")
       </p>
     
   </footer> 
-  `
-  
-   }
-  
-   contentEl.innerHTML = html;
-   
-  
+  `;
+}
+
+contentEl.innerHTML = html;
